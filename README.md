@@ -8,19 +8,23 @@ Developed for the Sukkur IBA University Final Year Project.
 
 ## Screenshots
 
-Place application screenshots in [`docs/screenshots/`](docs/screenshots/) using these filenames:
+Application screenshots are stored in [`docs/screenshots/`](docs/screenshots/):
 
 | Screen | File |
 | --- | --- |
-| Login | [`login.png`](docs/screenshots/login.png) |
-| Main dashboard | [`dashboard.png`](docs/screenshots/dashboard.png) |
-| Load forecast | [`forecast.png`](docs/screenshots/forecast.png) |
-| Optimisation | [`optimization.png`](docs/screenshots/optimization.png) |
+| Sign in | [`SignIn.png`](docs/screenshots/SignIn.png) |
+| Sign up | [`SignUp.png`](docs/screenshots/SignUp.png) |
+| Dashboard | [`Dashboard.png`](docs/screenshots/Dashboard.png) |
+| Data import | [`Import.png`](docs/screenshots/Import.png) |
+| Optimization | [`OPtimzation.png`](docs/screenshots/OPtimzation.png) |
+| Alerts | [`alert.png`](docs/screenshots/alert.png) |
+| Feeders | [`feeder.png`](docs/screenshots/feeder.png) |
+| Forecasting | [`forecasting.png`](docs/screenshots/forecasting.png) |
 
 After copying the images, they can be displayed here with Markdown such as:
 
 ```markdown
-![SCADA dashboard](docs/screenshots/dashboard.png)
+![SCADA dashboard](docs/screenshots/Dashboard.png)
 ```
 
 ## Key Capabilities
