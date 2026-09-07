@@ -1,0 +1,177 @@
+{
+  "Civil Hospital Feeder": {
+    "feeder": "Civil Hospital Feeder",
+    "trained_at": "2026-04-20T19:03:23.641708",
+    "data_rows": 8784,
+    "models": {
+      "Prophet": {
+        "metrics": {
+          "mape": 12.9579,
+          "smape": 12.8293,
+          "mae": 0.9194,
+          "mse": 1.0916,
+          "rmse": 1.0448,
+          "r2": 0.743
+        },
+        "epochs_trained": "\u2014",
+        "status": "ok"
+      }
+    }
+  },
+  "Airport Road Feeder": {
+    "feeder": "Airport Road Feeder",
+    "trained_at": "2026-04-20T19:03:19.076217",
+    "data_rows": 8784,
+    "models": {
+      "Prophet": {
+        "metrics": {
+          "mape": 9.8223,
+          "smape": 9.2412,
+          "mae": 0.9384,
+          "mse": 1.3909,
+          "rmse": 1.1794,
+          "r2": 0.8508
+        },
+        "epochs_trained": "\u2014",
+        "status": "ok"
+      }
+    }
+  },
+  "Rohri Industrial Feeder": {
+    "feeder": "Rohri Industrial Feeder",
+    "trained_at": "2026-04-20T19:03:27.080015",
+    "data_rows": 8784,
+    "models": {
+      "Prophet": {
+        "metrics": {
+          "mape": 10.8761,
+          "smape": 10.4875,
+          "mae": 1.6141,
+          "mse": 4.3518,
+          "rmse": 2.0861,
+          "r2": 0.7912
+        },
+        "epochs_trained": "\u2014",
+        "status": "ok"
+      }
+    }
+  },
+  "SITE Area Feeder": {
+    "feeder": "SITE Area Feeder",
+    "trained_at": "2026-04-20T19:03:28.829194",
+    "data_rows": 8784,
+    "models": {
+      "Prophet": {
+        "metrics": {
+          "mape": 13.2352,
+          "smape": 13.0608,
+          "mae": 1.5046,
+          "mse": 3.0338,
+          "rmse": 1.7418,
+          "r2": 0.6894
+        },
+        "epochs_trained": "\u2014",
+        "status": "ok"
+      }
+    }
+  },
+  "Military Road Feeder": {
+    "feeder": "Military Road Feeder",
+    "trained_at": "2026-04-20T19:03:25.413610",
+    "data_rows": 8784,
+    "models": {
+      "Prophet": {
+        "metrics": {
+          "mape": 12.5144,
+          "smape": 11.9816,
+          "mae": 0.9321,
+          "mse": 1.2024,
+          "rmse": 1.0965,
+          "r2": 0.8188
+        },
+        "epochs_trained": "\u2014",
+        "status": "ok"
+      }
+    }
+  },
+  "Barrage Colony Feeder": {
+    "feeder": "Barrage Colony Feeder",
+    "trained_at": "2026-04-20T19:03:21.646795",
+    "data_rows": 8784,
+    "models": {
+      "Prophet": {
+        "metrics": {
+          "mape": 12.2189,
+          "smape": 12.1271,
+          "mae": 0.972,
+          "mse": 1.39,
+          "rmse": 1.179,
+          "r2": 0.7337
+        },
+        "epochs_trained": "\u2014",
+        "status": "ok"
+      }
+    }
+  },
+  "Shikarpur Road Feeder": {
+    "feeder": "Shikarpur Road Feeder",
+    "trained_at": "2026-04-20T19:03:30.424068",
+    "data_rows": 8784,
+    "models": {
+      "Prophet": {
+        "metrics": {
+          "mape": 10.8726,
+          "smape": 10.6967,
+          "mae": 0.6458,
+          "mse": 0.6399,
+          "rmse": 0.7999,
+          "r2": 0.8087
+        },
+        "epochs_trained": "\u2014",
+        "status": "ok"
+      }
+    }
+  },
+  "Old Sukkur Residential Feeder": {
+    "feeder": "Old Sukkur Residential Feeder",
+    "trained_at": "2026-04-19T11:14:00",
+    "data_rows": 8784,
+    "models": {
+      "LSTM": {
+        "status": "ok",
+        "metrics": {
+          "mape": 5.62,
+          "smape": 5.4,
+          "mae": 0.2428,
+          "mse": 0.1061,
+          "rmse": 0.3257,
+          "r2": 0.9726
+        },
+        "epochs_trained": 47
+      },
+      "GRU": {
+        "status": "ok",
+        "metrics": {
+          "mape": 5.95,
+          "smape": 5.71,
+          "mae": 0.257,
+          "mse": 0.1189,
+          "rmse": 0.3448,
+          "r2": 0.9693
+        },
+        "epochs_trained": 52
+      },
+      "Prophet": {
+        "status": "ok",
+        "metrics": {
+          "mape": 6.66,
+          "smape": 6.39,
+          "mae": 0.2877,
+          "mse": 0.149,
+          "rmse": 0.386,
+          "r2": 0.9615
+        }
+      }
+    }
+  }
+}

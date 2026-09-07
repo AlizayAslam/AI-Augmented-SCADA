@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local runtime database and logs
+database.db
+database.db-shm
+database.db-wal
+logs/*
+!logs/.gitkeep
+
+# Generated reports
+*.pdf
+
+# Local training outputs
+models/*.pkl
+models/*.zip
+models/checkpoints/
