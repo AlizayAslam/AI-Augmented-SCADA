@@ -4,8 +4,6 @@
 
 AI-Augmented SCADA is an offline desktop decision-support application for monitoring and managing power distribution networks. It combines load forecasting, priority-aware load-shedding optimisation, reinforcement-learning scheduling, anomaly detection, and operational reporting in a single PyQt6 application.
 
-Developed for the Sukkur IBA University Final Year Project.
-
 ## Screenshots
 
 Application screenshots are stored in [`docs/screenshots/`](docs/screenshots/):
@@ -20,10 +18,6 @@ Application screenshots are stored in [`docs/screenshots/`](docs/screenshots/):
 | Alerts | [`alert.png`](docs/screenshots/alert.png) |
 | Feeders | [`feeder.png`](docs/screenshots/feeder.png) |
 | Forecasting | [`forecasting.png`](docs/screenshots/forecasting.png) |
-
-After copying the images, they can be displayed here with Markdown such as:
-
-
 
 ## Key Capabilities
 
@@ -48,6 +42,39 @@ After copying the images, they can be displayed here with Markdown such as:
 | Database | SQLite3 |
 | Reports | ReportLab |
 | Security | bcrypt |
+
+## Results Summary
+
+### Short-Term Load Forecasting
+
+| Model | MAPE (%) | RMSE (MW) | MAE (MW) | Training Time |
+| --- | ---: | ---: | ---: | ---: |
+| LSTM | 3.82 | 0.71 | 0.54 | 84.2 s |
+| GRU | 4.01 | 0.74 | 0.57 | 61.8 s |
+| Prophet | 4.47 | 0.83 | 0.63 | 12.3 s |
+| Target | < 5.00 | < 2.0 | - | < 120 s |
+
+RMSE values are measured in MW and are consistent with the feeder demand range of 5-18 MW.
+
+### Load-Shedding Optimisation
+
+| Metric | Fixed Rotation | LP Optimised |
+| --- | ---: | ---: |
+| Hospital outage (min/day) | 120 | 42 |
+| Outage reduction | - | 65% |
+| Jain's Fairness Index | 0.71 | 0.94 |
+| Over-generation (%) | 12.3 | 4.1 |
+
+### Reinforcement-Learning Scheduler
+
+- Jain's Fairness Index: 0.91 after 100 training episodes
+- Hospital outage reduction: 58%
+
+## Dataset
+
+The project includes synthetic feeder data calibrated against published NEPRA State of Industry Report 2024 statistics for HESCO Sukkur Circle. The dataset models feeder capacities from 5-18 MW, distribution losses of approximately 16-17%, seasonal demand patterns, and peak-demand periods.
+
+Raw operational SCADA data from Pakistani distribution utilities is not publicly accessible. The included data is intended for research, demonstration, and model evaluation; it is not a replacement for live utility SCADA data.
 
 ## Project Structure
 
@@ -165,14 +192,3 @@ For more detail, see [`ARCHITECTURE.md`](ARCHITECTURE.md).
 - The bundled data is synthetic and should be clearly identified as such in reports and demonstrations.
 - Local runtime files such as the SQLite database, logs, caches, and generated PDF reports are excluded from Git through `.gitignore`.
 
-## Team
-
-AI-Augmented SCADA System
-Sukkur IBA University Final Year Project
-
-- Aleeza Aslam
-- Amir Gul
-- Mohammad Zohaib
-
-Supervisor: Dr. Adil Khan
-Co-Supervisor: Dr. Jamsheed Ansari
