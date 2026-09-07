@@ -23,9 +23,7 @@ Application screenshots are stored in [`docs/screenshots/`](docs/screenshots/):
 
 After copying the images, they can be displayed here with Markdown such as:
 
-```markdown
-![SCADA dashboard](docs/screenshots/Dashboard.png)
-```
+
 
 ## Key Capabilities
 
@@ -167,23 +165,14 @@ For more detail, see [`ARCHITECTURE.md`](ARCHITECTURE.md).
 - The bundled data is synthetic and should be clearly identified as such in reports and demonstrations.
 - Local runtime files such as the SQLite database, logs, caches, and generated PDF reports are excluded from Git through `.gitignore`.
 
-## Git Workflow
-
-```bash
-git status
-git add .
-git commit -m "Describe your change"
-git push origin main
-```
-
 ## Team
 
 AI-Augmented SCADA System
 Sukkur IBA University Final Year Project
 
+- Aleeza Aslam
 - Amir Gul
 - Mohammad Zohaib
-- Aleeza Aslam
 
 Supervisor: Dr. Adil Khan
 Co-Supervisor: Dr. Jamsheed Ansari
